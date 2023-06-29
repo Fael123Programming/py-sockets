@@ -18,7 +18,7 @@ def run_server():
                 client.sendall(data.encode())
                 client.shutdown(SHUT_WR)
         except KeyboardInterrupt:
-            print('\n Shutting down...\n')
+            print('\nShutting down...\n')
         except Exception as exc:
             print('Error: \n')
             print(exc)
